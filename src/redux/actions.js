@@ -21,9 +21,9 @@ export function updateTodo(todo){
         payload:todo
     }
 }
-export function updateDone(todo){
+export function updateDone(id){
     return {
         type:UPDATE_DONE,
-        payload:todo
+        payload:id
     }
 }

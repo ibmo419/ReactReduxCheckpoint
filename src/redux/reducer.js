@@ -24,18 +24,13 @@ export let reducer=(state=todos,action)=>{
                 newTodos[index]=action.payload;
                 return newTodos
             }
-        // case UPDATE_DONE:
-        //  newTodos=[...state];
-        //     for(let i=0 ;i < newTodos.length ; i++){
-        //         index++;
-        //         if(newTodos[i].id=action.payload.id){
-        //             break;
-        //         }
-        //         }
-        //     if(index!=-1){
-        //         newTodos[index]=action.payload;
-        //         return newTodos
-        //     }
+        case UPDATE_DONE:
+           return state.map(el=>{
+               if(el.id===action.payload){
+                   return {...el,done:!el.done}
+               }
+               return el
+           })
 
     }
     return state;

@@ -45,12 +45,7 @@ function Task({task}) {
                 >Delete</button>
                 <button 
                 onClick={()=>{
-                    // dispatch(updateDone(
-                    //     {
-                    //         ...task,
-                    //         done:!task.done,
-                    //     }
-                    // ))
+                    dispatch(updateDone(task.id))
                     setDone(!done)
                 }
                 }
