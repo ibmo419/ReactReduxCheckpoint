@@ -1,8 +1,8 @@
 {
-  "homepage": "http://ibmo419/github.io/TodoApp",
+  "homepage": "http://ibmo419/github.io/ReactTodoApp",
   "name": "to-do-list",
   "version": "0.1.0",
-  
+
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
